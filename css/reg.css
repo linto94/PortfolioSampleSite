@@ -1,0 +1,105 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+body{
+	padding: 5px;
+}
+ 
+ /*CSS For Header and Nav Section*/
+
+.navbar{
+	display: flex;
+	justify-content: center;
+	height: 50px;
+	align-items: center;
+	position: relative;
+}
+.navbar::before{
+	content: "";
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.451);
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+.navbar ul{
+	display: flex;
+	list-style: none;
+}
+.navbar ul li{
+	font-size: 15px;
+}
+.navbar ul li a{
+	padding: 5px 20px ;
+	text-decoration: none;
+	color: #fff;
+}
+.navbar ul li a:hover{
+	border-bottom: 2px solid rgb(180, 215, 62);
+}
+
+/*Start of Registration form Desgin*/
+
+.Reg-section{
+	background: url(/img/tower.jpg) no-repeat center center/cover;
+	padding: 40px 0;
+}
+
+.Reg-section h1{
+	text-align: center;
+	color: lightgrey;
+}
+
+.border{
+	width: 150px;
+	height: 10px auto;
+	border: 5px solid rgb(180,215,62);
+	margin: 40px auto;
+}
+.Reg-form{
+	max-width: 600px;
+	margin: auto;
+	padding: 0 10px;
+	overflow: hidden;
+}
+.Reg-form label{
+	color: #fff;
+}
+.Reg-form label:hover{
+	background: #fff;
+	color: rgb(180, 215, 62);
+	font-weight: 700;
+	transition: 0.5s;
+}
+.reg-name{
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 16px 0;
+	border: 0;
+	background: #111;
+	padding: 20px 40px;
+	outline: none;
+	color: #fff;
+	transition: 0.5s;
+}
+.reg-name:hover{
+	box-shadow: 0 0 10px 4px rgb(180, 215, 62);
+}
+.reg-form-btn{
+	float: right;
+	border:0;
+	background: rgb(180, 215, 62);
+	color: #fff;
+	padding: 12px 50px;
+	border-radius: 20px;
+	cursor: pointer;
+	transition:0.5s ;
+}
+.reg-form-btn:hover{
+	background: #fff;
+   color:rgb(180, 215, 62);
+   font-weight: 700;
+}

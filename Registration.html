@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration Page</title>
+	<link rel="stylesheet" type="text/css" href="/css/reg.css">
+</head>
+<body>
+	<!-- Start of Header Section -->
+	<header class="maninheader">
+		<nav class="navbar">
+			<ul>
+				<li><a href="index.html">ABOUT</a></li>
+				<li><a href="Contact.html">CONTACT</a></li>
+				<li><a href="Registration.html">REGISTRATION</a></li>
+				<li><a href="Login.html">LOGIN</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- End of Header Section and start of Main Section -->
+
+	<main>
+		<section class="Reg-section">
+
+			<h1>REGISTRATION</h1>
+			<div class="border"></div>
+			<form class="Reg-form" action="index.html" method="post">
+				<input type="text" name="fname" class="reg-name" placeholder="First-Name" maxlength="7" minlength="4">
+				<input type="text" name="lname" class="reg-name" placeholder="Last-Name" maxlength="7" minlength="4">
+				<input type="text" name="phonenumber" class="reg-name" placeholder="Phone Number" maxlength="12" minlength="9">
+				<input type="email" name="email" class="reg-name" placeholder="Email">
+				<input type="text" name="country" class="reg-name" placeholder="Country" maxlength="10" minlength="4">
+				<input type="text" name="state" class="reg-name" placeholder="State/Province" maxlength="11" pattern="[0-11]{3}-[0-11]{4}-[0-11]{4}">
+				<label for="gender">Gender:</label>
+				<select name="gender" class="reg-name">
+					<option value="Select">Select</option>
+					<option value="Male">Male</option>
+					<option value="Female">Female</option>
+				</select> 
+				<input type="password" name="psdw" class="reg-name" placeholder="Password">
+				<input type="password" name="psdw" class="reg-name" placeholder="Confirm Password">
+				<input type="submit" name="submit" class="reg-form-btn" value="Register">
+			</form>
+			
+		</section>
+	</main>
+     
+<!--      END OF MAIN SECTION -->
+
+</body>
+</html>
